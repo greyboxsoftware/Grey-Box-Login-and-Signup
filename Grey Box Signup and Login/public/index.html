@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Kevin Johnson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body ng-app="greyBoxLogin">
+  <div class="container">
+    
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>Grey Box Software Solutions</h1>
+        </div>
+        <div class="col-xs-12">
+          <h3 class="text-center">Welcome to Grey Box Software Solutions, this applications demonstrates a login and signup form that demonstrates how to establish user accounts and interactions with a backend database. In is particular application we will be using <b>Firebase.io</b> for our backend database. In this demo non of your supplied information will ever be stored nor shared.This application is written with heavy emphasis on AngularJS.  </h3>
+        </div>
+      </div>
+    
+    
+  <div class="row">
+    <div class="col-xs-12 col-lg-6">
+    <div ng-controller="showForm">
+      <h2 type="button" 
+              class="text-center showButton">
+        Login
+      </h2>
+      <form class="text-center"
+            style="padding: 20px" 
+            name="loginForm" 
+            novalidate>
+        <input class="text-center inputWidth"
+               type="email" 
+               name="email" 
+               placeholder="Email" 
+               ng-model="login.email" 
+               ng-required="true">
+        <br><br>
+        <input class="text-center inputWidth"
+               type="password" 
+               name="password" 
+               placeholder="Password" 
+               ng-model="login.password" 
+               required>
+        <br><br>
+        <input class="text-center inputWidth"
+               type="submit" 
+               value="Submit" 
+               ng-click="login()"
+               > 
+        <br>
+        <p><b>{{loginMessage}}</b></p>
+      </form>
+    </div>
+    </div>
+
+
+    <div class="col-xs-12 col-lg-6" 
+         ng-controller="signupForm">  
+    <h2 
+            type="button" 
+            class="showButton text-center" 
+            >Sign Up
+      </h2>
+      
+      <form class="text-center col-xs-12"
+            style="padding: 20px" 
+            name="signupForm"
+            novalidate>
+        <input class="text-center inputWidth"
+               type="text" 
+               name="firstName" 
+               placeholder="First Name" 
+               ng-model="signup.firstName" 
+               ng-required="true" 
+         >
+        <br>
+        <p class="errorColor validationerror" 
+           ng-show="signupForm.firstName.$touched && signupForm.firstName.$invalid">
+          First name cannot be left blank!
+        </p>
+        <br>
+        <input id="lastName" 
+               class="text-center inputWidth" type="text" 
+               name="lastName" 
+               placeholder="Last Name" 
+               ng-model="signup.lastName" 
+               ng-required = "true">
+        <br>
+        <p class="errorColor validationerror" 
+           ng-show="signupForm.lastName.$touched && signupForm.lastName.$invalid">
+          Last name cannot be left blank!
+        </p>
+        <br>
+        <input class="text-center inputWidth"
+               type="email" 
+               name="email" 
+               placeholder="Email" 
+               ng-model="signup.email" 
+               ng-required="true">
+        <br>
+        <p class="errorColor validationerror" 
+           ng-show="signupForm.email.$invalid && signupForm.email.$touched">
+          Email is invalid
+        </p>
+        <br>
+        <input class="text-center inputWidth"
+               type="password" 
+               name="password" 
+               placeholder="Password" 
+               ng-model="signup.password" 
+               ng-required="true"
+               ng-minlength="6">
+        <br>
+        <p class="errorColor validationerror" 
+           ng-show="signupForm.password.$invalid && signupForm.password.$touched">
+          Password must be at least 6 characters
+        </p>
+        <br>
+        <input class="text-center inputWidth"
+               type="password" 
+               name="confirmPassword" placeholder="Confirm Password" 
+               ng-model="signup.confirmPassword" 
+               ng-required="true"
+               data-confirm-password="signup.password"
+               >
+        <br>
+        <p class="errorColor validationerror" 
+           ng-show="signupForm.confirmPassword.$invalid && signupForm.confirmPassword.$touched">
+          Passwords do not match
+        </p>
+        <br>
+        <input class="text-center inputWidth"
+               type="submit" 
+               value="Register" 
+               ng-click="submit()"> 
+         <br>
+        <p><b>{{message}}</b></p>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js'></script>
+<script src='https://cdn.firebase.com/js/client/2.2.4/firebase.js'></script>
+<script src='https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
