@@ -2,18 +2,11 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>A Pen by  Kevin Johnson</title>
+    <title>Grey Box Login/Signup Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
-
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -26,7 +19,8 @@
           <h1>Grey Box Software Solutions</h1>
         </div>
         <div class="col-xs-12">
-          <h3 class="text-center">Welcome to Grey Box Software Solutions, this applications demonstrates a login and signup form that demonstrates how to establish user accounts and interactions with a backend database. In is particular application we will be using <b>Firebase.io</b> for our backend database. In this demo non of your supplied information will ever be stored nor shared.This application is written with heavy emphasis on AngularJS.  </h3>
+          <h3 class="text-center">Welcome to Grey Box Software Solutions, this applications demonstrates a login and signup form that demonstrates how to establish user accounts and interactions with a backend database. In is particular application we will be using <b>Firebase.io</b> for our backend database. In this demo non of your supplied information will ever be stored nor shared.This application is written with heavy emphasis on AngularJS.</h3>
+          <h3 class="text-center">This is a work in progress and the next rendition of this will show you logged in only content. However, this form does demonstrate a fully functioning front end form application using angularJS and backend database using Firbase by Google. </h3>
         </div>
       </div>
     
@@ -147,23 +141,20 @@
                type="submit" 
                value="Register" 
                ng-click="submit()"> 
-         <br>
-        <p><b>{{message}}</b></p>
-      </form>
-    </div>
-    </div>
+            <br>
+            <p><b>{{message}}</b></p>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </body>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
 <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js'></script>
 <script src='https://cdn.firebase.com/js/client/2.2.4/firebase.js'></script>
 <script src='https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js'></script>
+<script src="js/index.js"></script>
 
-        <script src="js/index.js"></script>
-
-    
-    
-    
-  </body>
+</body>
 </html>
