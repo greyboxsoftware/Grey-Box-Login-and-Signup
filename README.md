@@ -1,7 +1,7 @@
 # Grey-Box-Login-and-Signup
 
-This is an example Login/Signup form that is programmed using HTML/CSS3 with heavy emphasis on AngularJS.
+(under continual development) 
 
-The authentication and registration is used by using Google’s Firebase backend service which gives you tons of control on user management and live updates.
+Welcome to Grey Box Software Solutions your one stop shop for anything software or scripting. In this demo we will demonstrate signup and login forms. The frontend of the application is designed with heavy emphasis on AngularJS, HTML5, CSS3. The backend of the application is using Firebase.com platform for registration and authentication. 
 
-Still adding features to this form.
+This form is used for demonstration purposes and non of the information provided is used or shared outside the application. 
